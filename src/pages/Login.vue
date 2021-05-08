@@ -87,7 +87,7 @@ export default {
   align-items: center;
   //background:rgba(255,255,255,1);
   //background-color: #002147;
-  background-color: #e5e5e5;
+  background-color: #E9EEF3;
   border-radius: 6px;
   position: fixed;
   top: 50%;

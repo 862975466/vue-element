@@ -1,11 +1,18 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view></router-view>
   </div>
 </template>
-
-<style>
-*{
-  box-sizing: border-box;
+<script>
+export default {
+  name:'App',
 }
+</script>
+<style lang="scss">
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 </style>

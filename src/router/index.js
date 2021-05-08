@@ -1,14 +1,47 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../views/Login'
+import Home from "../pages/Home";
+import Login from '../pages/Login'
+import IndexMain from "../views/IndexMain";
+import AdminCenter from "../views/AdminCenter";
+import RetrievalCenter from "../views/RetrievalCenter";
 Vue.use(VueRouter)
 
+// 解决ElementUI导航栏中的vue-router在3.0版本以上重复点菜单报错问题
+const originalPush = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+  return originalPush.call(this, location).catch(err => err)
+}
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    children:[
+      {
+        path: '/',
+        name: 'indexMain',
+        component: IndexMain
+      },
+      {
+        path: '/adminCenter',
+        name: 'adminCenter',
+        component: AdminCenter
+      },
+      {
+        path: '/retrievalCenter',
+        name: 'RetrievalCenter',
+        component: RetrievalCenter
+      },
+      {
+        path: '/addProject',
+        name: 'AddProject',
+        // route level code-splitting
+        // this generates a separate chunk (AddProject.[hash].js) for this route
+        // which is lazy-loaded when the route is visited.
+        component: () => import(/* webpackChunkName: "AddProject" */ '../views/AddProject.vue'), //路由懒加载
+      },
+    ]
   },
   {
     path: '/Login',
@@ -17,14 +50,6 @@ const routes = [
     meta:{
       requireAuth: true //不需要登陆就可以进入页面
     }
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'), //路由懒加载
   }
 ]
 
