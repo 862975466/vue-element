@@ -9,10 +9,10 @@ export default {
 }
 </script>
 <style lang="scss">
+@import "./src/assets/style/public";
 body{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 </style>

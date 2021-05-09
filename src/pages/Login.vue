@@ -59,7 +59,7 @@ export default {
     },
     loginFun(){
       sessionStorage.setItem('userLoginInfo',"{userName:'张三',userId:'475756478462'}");
-      const pathUrl = this.$route.query.redirect;
+      const pathUrl = this.$route.query.redirect || '/';
       this.$router.replace({
         path: pathUrl,
       })
@@ -78,8 +78,8 @@ export default {
   top: 0;
 }
 .wrap{
-  width: 460px;
-  height: 320px;
+  width: 320px;
+  height: 300px;
   box-shadow: 0 0 8px 0 #232323;
   padding-left: 30px;
   padding-right: 65px;

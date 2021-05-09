@@ -40,7 +40,7 @@ export default [
       {
         name:'客户录入',
         id:'a-2-2',
-        path:'/addUesr',
+        path:'/uesrInto',
         icon:'',
       }
     ]
@@ -106,7 +106,7 @@ export default [
       {
         name:'URL检索',
         id:'a-5-3',
-        path:'/URLretrieval',
+        path:'/urlRetrieval',
         icon:'',
       }
     ]

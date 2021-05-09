@@ -1,17 +1,11 @@
 .flex-row{
   display: flex;
   align-items: center;
-  align-content: space-around;
+  justify-content: space-between;
 }
 .flex-start{
   display: flex;
   align-items: center;
-}
-.flex-col{
-  display: flex;
-  align-items: center;
-  align-content: space-around;
-  flex-direction: column;
 }
 .flex-size{
   flex: 1;
