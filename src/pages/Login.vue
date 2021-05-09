@@ -40,6 +40,7 @@
 <script>
 import Vue from 'vue';
 import VueParticles from 'vue-particles';
+import {apiLogin} from "../Api/http/api";
 Vue.use(VueParticles);
 export default {
   name: "Login",
@@ -55,13 +56,17 @@ export default {
   //事件处理
   methods: {
     registerFun(){
-
     },
     loginFun(){
       sessionStorage.setItem('userLoginInfo',"{userName:'张三',userId:'475756478462'}");
       const pathUrl = this.$route.query.redirect || '/';
       this.$router.replace({
         path: pathUrl,
+      })
+      apiLogin({}).then((succ)=>{
+        if(succ.code === 0){
+          console.log('succ==',succ);
+        }
       })
     },
   },

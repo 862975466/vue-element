@@ -99,6 +99,8 @@ export default {
       this.openedsActive = ['',this.$route.path];
     },
     cancelProiect(){
+      //sessionStorage.removeItem('userLoginInfo');
+      sessionStorage.clear();
       this.$router.replace({
         path:'/login'
       })
