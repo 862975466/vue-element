@@ -3,8 +3,6 @@ import VueRouter from 'vue-router'
 import Home from "../pages/Home";
 import Login from '../pages/Login'
 import IndexMain from "../views/IndexMain";
-import AdminCenter from "../views/AdminCenter";
-import RetrievalCenter from "../views/RetrievalCenter";
 Vue.use(VueRouter)
 
 // 解决ElementUI导航栏中的vue-router在3.0版本以上重复点菜单报错问题
@@ -15,7 +13,6 @@ VueRouter.prototype.push = function push(location) {
 const routes = [
   {
     path: '/',
-    name: 'Home',
     component: Home,
     children:[
       {
@@ -26,28 +23,18 @@ const routes = [
       {
         path: '/adminCenter',
         name: 'adminCenter',
-        component: AdminCenter
+        component: () => import('../views/AdminCenter.vue'), //路由懒加载
+
       },
       {
         path: '/retrievalCenter',
         name: 'retrievalCenter',
-        component: RetrievalCenter
+        component: () => import('../views/RetrievalCenter.vue'), //路由懒加载
       },
       {
         path: '/addProject',
         name: 'addProject',
         component: () => import('../views/AddProject.vue'), //路由懒加载
-      },
-      {
-        path: '/userAdmin',
-        name: 'userAdmin',
-        component: () => import('../views/UserAdmin.vue'), //路由懒加载
-      },
-      //
-      {
-        path: '/userAdmin',
-        name: 'userAdmin',
-        component: () => import('../views/UserAdmin.vue'), //路由懒加载
       },
       {
         path: '/userAdmin',
