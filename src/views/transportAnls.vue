@@ -1,12 +1,12 @@
 <template>
-  <div class="AddTask">
-    AddTask
+  <div class="transportAnls">
+    transportAnls
   </div>
 </template>
 
 <script>
 export default {
-  name: "AddTask",
+  name: "transportAnls",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.AddTask {
+.transportAnls {
 }
 </style>

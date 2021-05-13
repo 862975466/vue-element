@@ -1,12 +1,12 @@
 <template>
-  <div class="AddProject">
-    AddProject
+  <div class="abnormalRecord">
+    abnormalRecord
   </div>
 </template>
 
 <script>
 export default {
-  name: "AddProject",
+  name: "abnormalRecord",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.AddProject {
+.abnormalRecord {
 }
 </style>

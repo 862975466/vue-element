@@ -1,166 +1,180 @@
 export default [
   {
-    name:'管理中心',
-    id:'a-1',
-    path:'/adminCenter',
+    name:'委托订单',
+    id:'nav-1',
+    path:'/nav-1',
     icon:'',
     child:[
       {
-        name:'项目管理',
-        id:'a-1-1',
-        path:'/adminCenter',
+        name:'委托订单',
+        id:'nav-1-1',
+        path:'/entrustOrder',
+        icon:'',
+      },
+    ]
+  },
+  {
+    name:'调度派车',
+    id:'nav-2',
+    path:'/nav-2',
+    icon:'',
+    child:[
+      {
+        name:'车队管理',
+        id:'nav-2-1',
+        path:'/carsSet',
         icon:'',
       },
       {
-        name:'新建项目',
-        id:'a-1-2',
-        path:'/addProject',
+        name:'调度单',
+        id:'nav-2-2',
+        path:'/dispatchOrder',
         icon:'',
       },
       {
-        name:'检索中心',
-        id:'a-1-3',
-        path:'/retrievalCenter',
+        name:'运输跟踪',
+        id:'nav-2-3',
+        path:'/transportRecord',
+        icon:'',
+      },
+      {
+        name:'维修保养',
+        id:'nav-2-4',
+        path:'/maintenance',
+        icon:'',
+      },
+      {
+        name:'异常记录',
+        id:'nav-2-5',
+        path:'/abnormalRecord',
+        icon:'',
+      },
+      {
+        name:'延误记录',
+        id:'nav-2-6',
+        path:'/delayRecord',
         icon:'',
       }
     ]
   },
   {
-    name:'客户管理',
-    id:'a-2',
-    path:'/userAdmin',
+    name:'结算中心',
+    id:'nav-3',
+    path:'/nav-3',
     icon:'',
     child:[
       {
-        name:'客户列表',
-        id:'a-2-1',
-        path:'/userAdmin',
+        name:'应收费用',
+        id:'nav-3-1',
+        path:'/realCost',
         icon:'',
       },
       {
-        name:'客户录入',
-        id:'a-2-2',
-        path:'/uesrInto',
+        name:'应收对账单',
+        id:'nav-3-2',
+        path:'/realBill',
+        icon:'',
+      },
+      {
+        name:'发票管理',
+        id:'nav-3-3',
+        path:'/invoiceSet',
         icon:'',
       }
     ]
   },
   {
-    name:'扫描管理',
-    id:'a-3',
-    path:'/scanningAdmin',
+    name:'统计报表',
+    id:'nav-4',
+    path:'/nav-4',
     icon:'',
     child:[
       {
-        name:'任务列表',
-        id:'a-3-1',
-        path:'/scanningAdmin',
+        name:'订单统计',
+        id:'nav-4-1',
+        path:'/orderStats',
         icon:'',
       },
       {
-        name:'新建任务',
-        id:'a-3-2',
-        path:'/addTask',
+        name:'运输分析',
+        id:'nav-4-2',
+        path:'/transportAnls',
+        icon:'',
+      },
+      {
+        name:'应收费用报表',
+        id:'nav-4-3',
+        path:'/realCostECharts',
         icon:'',
       }
     ]
   },
   {
-    name:'信息搜集',
-    id:'a-4',
-    path:'/infoGathering',
+    name:'基础数据',
+    id:'nav-5',
+    path:'/nav-5',
     icon:'',
     child:[
       {
-        name:'信息搜集',
-        id:'a-4-1',
-        path:'/infoGathering',
+        name:'承运商管理',
+        id:'nav-5-1',
+        path:'/carrierSet',
         icon:'',
       },
       {
-        name:'新建搜集',
-        id:'a-4-2',
-        path:'/addGathering',
+        name:'委托客户管理',
+        id:'nav-5-2',
+        path:'/clientSet',
+        icon:'',
+      },
+      {
+        name:'收发货人管理',
+        id:'nav-5-3',
+        path:'/consignorSet',
+        icon:'',
+      },
+      {
+        name:'车辆管理',
+        id:'nav-5-4',
+        path:'/carSet',
+        icon:'',
+      },
+      {
+        name:'司机管理',
+        id:'nav-5-5',
+        path:'/driverSet',
         icon:'',
       }
     ]
   },
   {
-    name:'站点爬虫',
-    id:'a-5',
-    path:'/siteCrawler',
+    name:'权限管理',
+    id:'nav-6',
+    path:'/nav-6',
     icon:'',
     child:[
       {
-        name:'爬虫列表',
-        id:'a-5-1',
-        path:'/siteCrawler',
+        name:'用户管理',
+        id:'nav-6-1',
+        path:'/userSet',
         icon:'',
       },
       {
-        name:'新建爬虫',
-        id:'a-5-2',
-        path:'/addCrawler',
+        name:'角色管理',
+        id:'nav-6-2',
+        path:'/roleSet',
         icon:'',
       },
       {
-        name:'URL检索',
-        id:'a-5-3',
-        path:'/urlRetrieval',
-        icon:'',
-      }
-    ]
-  },
-  {
-    name:'节点管理',
-    id:'a-6',
-    path:'/nodeAdmin',
-    icon:'',
-    child:[
-      {
-        name:'节点列表',
-        id:'a-6-1',
-        path:'/nodeAdmin',
+        name:'数据字典',
+        id:'nav-6-3',
+        path:'/dataDictionary',
         icon:'',
       },
       {
-        name:'添加节点',
-        id:'a-6-2',
-        path:'/addNode',
-        icon:'',
-      }
-    ]
-  },
-  {
-    name:'系统管理',
-    id:'a-7',
-    path:'/systemAdmin',
-    icon:'',
-    child:[
-      {
-        name:'用户列表',
-        id:'a-7-1',
-        path:'/systemAdmin',
-        icon:'',
-      },
-      {
-        name:'添加用户',
-        id:'a-7-2',
-        path:'/addUser',
-        icon:'',
-      }
-    ]
-  },
-  {
-    name:'代理地址池',
-    id:'a-8',
-    path:'/agentHref',
-    icon:'',
-    child:[
-      {
-        name:'用户列表',
-        id:'a-8-1',
-        path:'/agentHref',
+        name:'操作日志',
+        id:'nav-6-4',
+        path:'/operationLog',
         icon:'',
       }
     ]

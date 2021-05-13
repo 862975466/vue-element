@@ -1,12 +1,12 @@
 <template>
-  <div class="RetrievalCenter">
-    RetrievalCenter
+  <div class="invoiceSet">
+    invoiceSet
   </div>
 </template>
 
 <script>
 export default {
-  name: "RetrievalCenter",
+  name: "invoiceSet",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.RetrievalCenter {
+.invoiceSet {
 }
 </style>

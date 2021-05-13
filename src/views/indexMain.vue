@@ -1,12 +1,12 @@
 <template>
-  <div class="AgentHref">
-    AgentHref
+  <div class="indexMain">
+    indexMain
   </div>
 </template>
 
 <script>
 export default {
-  name: "AgentHref",
+  name: "indexMain",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.AgentHref {
+.indexMain {
 }
 </style>

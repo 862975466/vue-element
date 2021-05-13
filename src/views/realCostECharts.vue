@@ -1,12 +1,12 @@
 <template>
-  <div class="UserAdmin">
-    UserAdmin
+  <div class="realCostECharts">
+    realCostECharts
   </div>
 </template>
 
 <script>
 export default {
-  name: "UserAdmin",
+  name: "realCostECharts",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.UserAdmin {
+.realCostECharts {
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="SystemAdmin">
-    SystemAdmin
+  <div class="transportRecord">
+    transportRecord
   </div>
 </template>
 
 <script>
 export default {
-  name: "SystemAdmin",
+  name: "transportRecord",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.SystemAdmin {
+.transportRecord {
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="AddNode">
-    AddNode
+  <div class="dataDictionary">
+    dataDictionary
   </div>
 </template>
 
 <script>
 export default {
-  name: "AddNode",
+  name: "dataDictionary",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.AddNode {
+.dataDictionary {
 }
 </style>

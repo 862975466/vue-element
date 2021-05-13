@@ -1,12 +1,12 @@
 <template>
-  <div class="AddCrawler">
-    AddCrawler
+  <div class="userSet">
+    userSet
   </div>
 </template>
 
 <script>
 export default {
-  name: "AddCrawler",
+  name: "userSet",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.AddCrawler {
+.userSet {
 }
 </style>

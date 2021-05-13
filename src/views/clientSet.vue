@@ -1,12 +1,12 @@
 <template>
-  <div class="UrlRetrieval">
-    UrlRetrieval
+  <div class="clientSet">
+    clientSet
   </div>
 </template>
 
 <script>
 export default {
-  name: "UrlRetrieval",
+  name: "clientSet",
   //组件通讯
   props: [],
   //created创建完毕状态
@@ -29,6 +29,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.UrlRetrieval {
+.clientSet {
 }
 </style>
