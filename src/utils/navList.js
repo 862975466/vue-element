@@ -8,6 +8,7 @@ export default [
       {
         name:'委托订单',
         id:'nav-1-1',
+        parentId:'nav-1',
         path:'/entrustOrder',
         icon:'',
       },
@@ -22,36 +23,42 @@ export default [
       {
         name:'车队管理',
         id:'nav-2-1',
+        parentId:'nav-2',
         path:'/carsSet',
         icon:'',
       },
       {
         name:'调度单',
         id:'nav-2-2',
+        parentId:'nav-2',
         path:'/dispatchOrder',
         icon:'',
       },
       {
         name:'运输跟踪',
         id:'nav-2-3',
+        parentId:'nav-2',
         path:'/transportRecord',
         icon:'',
       },
       {
         name:'维修保养',
         id:'nav-2-4',
+        parentId:'nav-2',
         path:'/maintenance',
         icon:'',
       },
       {
         name:'异常记录',
         id:'nav-2-5',
+        parentId:'nav-2',
         path:'/abnormalRecord',
         icon:'',
       },
       {
         name:'延误记录',
         id:'nav-2-6',
+        parentId:'nav-2',
         path:'/delayRecord',
         icon:'',
       }
@@ -66,18 +73,21 @@ export default [
       {
         name:'应收费用',
         id:'nav-3-1',
+        parentId:'nav-3',
         path:'/realCost',
         icon:'',
       },
       {
         name:'应收对账单',
         id:'nav-3-2',
+        parentId:'nav-3',
         path:'/realBill',
         icon:'',
       },
       {
         name:'发票管理',
         id:'nav-3-3',
+        parentId:'nav-3',
         path:'/invoiceSet',
         icon:'',
       }
@@ -92,18 +102,21 @@ export default [
       {
         name:'订单统计',
         id:'nav-4-1',
+        parentId:'nav-4',
         path:'/orderStats',
         icon:'',
       },
       {
         name:'运输分析',
         id:'nav-4-2',
+        parentId:'nav-4',
         path:'/transportAnls',
         icon:'',
       },
       {
         name:'应收费用报表',
         id:'nav-4-3',
+        parentId:'nav-4',
         path:'/realCostECharts',
         icon:'',
       }
@@ -118,30 +131,35 @@ export default [
       {
         name:'承运商管理',
         id:'nav-5-1',
+        parentId:'nav-5',
         path:'/carrierSet',
         icon:'',
       },
       {
         name:'委托客户管理',
         id:'nav-5-2',
+        parentId:'nav-5',
         path:'/clientSet',
         icon:'',
       },
       {
         name:'收发货人管理',
         id:'nav-5-3',
+        parentId:'nav-5',
         path:'/consignorSet',
         icon:'',
       },
       {
         name:'车辆管理',
         id:'nav-5-4',
+        parentId:'nav-5',
         path:'/carSet',
         icon:'',
       },
       {
         name:'司机管理',
         id:'nav-5-5',
+        parentId:'nav-5',
         path:'/driverSet',
         icon:'',
       }
@@ -156,24 +174,28 @@ export default [
       {
         name:'用户管理',
         id:'nav-6-1',
+        parentId:'nav-6',
         path:'/userSet',
         icon:'',
       },
       {
         name:'角色管理',
         id:'nav-6-2',
+        parentId:'nav-6',
         path:'/roleSet',
         icon:'',
       },
       {
         name:'数据字典',
         id:'nav-6-3',
+        parentId:'nav-6',
         path:'/dataDictionary',
         icon:'',
       },
       {
         name:'操作日志',
         id:'nav-6-4',
+        parentId:'nav-6',
         path:'/operationLog',
         icon:'',
       }
