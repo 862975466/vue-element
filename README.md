@@ -28,8 +28,8 @@ src 前端程序
 -assets 外部资源
 
 --css css资源
-
---img 图片资源
+ --style public.scss //全局定义的class样式。 
+ --style variables.scss //统一的颜色,内边距,外边距,圆角 --style themeSet //主题--img 图片资源
 
 -pages 页面文件
 
@@ -41,4 +41,5 @@ src 前端程序
 
 dist 产出入口目录
 
--js 入口
+-utils 工具
+-utils navList.js //左侧导航
