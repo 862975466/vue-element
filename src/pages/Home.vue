@@ -21,9 +21,9 @@
       </el-header>
       <el-container id="container">
         <el-aside width="220px">
-          <el-menu :default-openeds="openedsActive" :default-active="openedsActive[1]" @select="selectFunli"
-                   @close="closeFunli" @open="openFunli" style="height: 100%">
-            <el-scrollbar style="height: 100%">
+          <el-menu :default-openeds="openedsActive" :default-active="openedsActive[1]" @select="selectFunli" @close="closeFunli"
+                   @open="openFunli" style="height: 100%">
+            <el-scrollbar style="height: 100%;overflow-x: hidden">
               <el-menu-item index="/">首页</el-menu-item>
               <el-submenu v-for="(item,index) in navList" :index="item.path" :key="index">
                 <template slot="title">{{item.name}}</template>
@@ -69,13 +69,12 @@ export default {
   methods:{
     selectFunli(key, keyPath){
       console.log('selectFunli==',key,keyPath);
-      if(key===1){
-        key = '/';
-      }
       this.$router.push({path:key});
       //点击首页在收起
-      if(key=='/'){
+      if(key === '/'){
         this.openedsActive = [null,'/'];
+      }else {
+        this.openedsActive = [keyPath[0],keyPath[1]];
       }
     },
     //打开下级
