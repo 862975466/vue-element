@@ -23,7 +23,7 @@
         <el-aside width="220px">
           <el-menu :default-openeds="openedsActive" :default-active="openedsActive[1]" @select="selectFunli" @close="closeFunli"
                    @open="openFunli" style="height: 100%">
-            <el-scrollbar style="height: 100%">
+            <el-scrollbar style="height: 100%;overflow-x: hidden">
               <el-menu-item index="/">首页</el-menu-item>
               <el-submenu v-for="(item,index) in navList" :index="item.path" :key="index">
                 <template slot="title">{{item.name}}</template>

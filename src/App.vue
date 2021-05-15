@@ -15,4 +15,7 @@ body{
   margin: 0;
   padding: 0;
 }
+.el-scrollbar__wrap{
+  overflow-x: hidden;
+}
 </style>
