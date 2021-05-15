@@ -1,5 +1,13 @@
 // vue.config.js
 module.exports = {
+  chainWebpack: config => {
+    config
+      .plugin('html')
+      .tap(args => {
+        args[0].title = "后台管理";
+        return args;
+      })
+  },
   css: {
     loaderOptions: {
       scss: {
