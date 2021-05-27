@@ -117,13 +117,8 @@ export function get(url, params){
  * @param {String} url [请求的url地址]
  * @param {Object} params [请求时携带的参数]
  ****/
-export function post(url, params,headerSet = '') {
-  // post请求头的设置
-  if(headerSet){
-    axios.defaults.headers.post['Content-Type'] = headerSet;
-  }else {
-    axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
-  }
+export function post(url, params,otherSet = {}) {
+  httpSet(otherSet);
   return new Promise((resolve, reject) => {
     axios.post(url, QS.stringify(params))
       .then(res => {
@@ -133,4 +128,18 @@ export function post(url, params,headerSet = '') {
         reject(err.data)
       })
   });
+}
+function httpSet(setParam){
+  // post请求头的设置
+  if(setParam.headerSet){
+    axios.defaults.headers.post['Content-Type'] = setParam.headerSet;
+  }else {
+    axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=UTF-8';
+  }
+  //携带token
+  if(setParam.token){
+    const accessToken = sessionStorage.getItem('access_token');
+    const tokenType = sessionStorage.getItem('token_type');
+    axios.defaults.headers.Authorization = tokenType + ' ' + accessToken;
+  }
 }
