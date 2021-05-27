@@ -53,7 +53,9 @@ axios.interceptors.response.use(
   // 服务器状态码不是200的情况
   error => {
     loadinginstace.close();
-    if (error.response.status) {
+    if(error.toString().indexOf('timeout' !== -1)){
+      Message.error('请求超时，请稍后重试');
+    }else if (error.response.status) {
       switch (error.response.status) {
         // 401: 未登录
         // 未登录则跳转登录页面，并携带当前页面的路径
