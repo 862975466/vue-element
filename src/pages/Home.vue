@@ -1,12 +1,12 @@
 <template>
   <div class="Home">
     <el-container>
-      <el-header class="flex-start">
-        <div class="flex-row" style="width: 100%;">
+      <el-header class="row_lr">
+        <div class="row_lr" style="width: 100%;">
           <div>logo</div>
           <div class="nav-right">
             <el-dropdown>
-              <div class="funtilt flex-start">
+              <div class="funtilt row_lr">
                 <p class="userNameIcon">{{userName | userNameIcon}}</p>
                 <p style="color: #fff;cursor: pointer">{{userName}}</p>
               </div>

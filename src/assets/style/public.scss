@@ -1,130 +1,198 @@
-.flex-row{
+.row_lr{
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.flex-start{
+.row_lr_auto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row_mod{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.row_cen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.row_cen_auto{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.flex-size{
+.flex_1{
   flex: 1;
 }
-.flex-size2{
-  flex: 2;
+.flex_1_cen{
+  flex: 1;
+  text-align: center;
 }
-.flex-size3{
-  flex: 3;
+.padd_lr30{
+  padding: 0 30px;
 }
-//重置外边距
-.mar-defu{
-  margin: 0;
-}
-//重置内边距
-.pag-defu{
-  padding: 0;
-}
-//top外边距
-.mar-top5{
-  margin-top: 5px;
-}
-.mar-top10{
-  margin-top: 10px;
-}
-.mar-top15{
-  margin-top: 15px;
-}
-.mar-top30{
-  margin-top: 30px;
-}
-//bottom外边距
-.mar-bom5{
-  margin-bottom: 5px;
-}
-.mar-bom10{
-  margin-bottom: 10px;
-}
-.mar-bom15{
-  margin-bottom: 15px;
-}
-.mar-bom30{
-  margin-bottom: 30px;
-}
-//left外边距
-.mar-lt5{
-  margin-left: 5px;
-}
-.mar-lt10{
-  margin-left: 10px;
-}
-.mar-lt15{
-  margin-left: 15px;
-}
-.mar-lt30{
-  margin-left: 30px;
-}
-//right外边距
-.mar-rt5{
-  margin-right: 5px;
-}
-.mar-rt10{
-  margin-right: 10px;
-}
-.mar-rt15{
-  margin-right: 15px;
-}
-.mar-rt30{
-  margin-right: 30px;
-}
-//top内边距
-.pag-top5{
-  padding-top: 5px;
-}
-.pag-top10{
-  padding-top: 10px;
-}
-.pag-top15{
-  padding-top: 15px;
-}
-.pag-top30{
-  padding-top: 30px;
-}
-//bottom内边距
-.pag-bom5{
-  padding-bottom: 5px;
-}
-.pag-bom10{
-  padding-bottom: 10px;
-}
-.pag-bom15{
-  padding-bottom: 15px;
-}
-.pag-bom30{
-  padding-bottom: 30px;
-}
-//left内边距
-.pag-lt5{
-  padding-left: 5px;
-}
-.pag-lt10{
-  padding-left: 10px;
-}
-.pag-lt15{
+.padd_lr{
   padding-left: 15px;
-}
-.pag-lt30{
-  padding-left: 30px;
-}
-//right内边距
-.pag-rt5{
-  padding-right: 5px;
-}
-.pag-rt10{
-  padding-right: 10px;
-}
-.pag-rt15{
   padding-right: 15px;
 }
-.pag-rt30{
-  padding-right: 30px;
+.padd_lr10{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.padd_lr5{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.padd_td30{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.padd_td{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.padd_td10{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.padd_td5{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.mar_td30{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mar_td{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mar_td10{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mar_td5{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*规范*/
+.font_bold{
+  font-weight: bold;
+}
+.font_size25{
+  font-size: 25px;
+}
+.font_size20{
+  font-size: 20px;
+}
+.font_size15{
+  font-size: 15px;
+}
+.font_size12{
+  font-size: 12px;
+}
+.font_white{
+  color: #fff;
+}
+.font_active{
+  color: #FF87A2;
+}
+.black_33{
+  color: #333333;
+}
+.black_66{
+  color: #666666;
+}
+.black_99{
+  color: #999999;
+}
+.black_b2{
+  color: #b2b2b2;
+}
+.black_c{
+  color: #cccccc;
+}
+.black_f3{
+  color: #f3f3f3;
+}
+.mar_top30{
+  margin-top: 30px;
+}
+.mar_top20{
+  margin-top: 20px;
+}
+.mar_top{
+  margin-top: 15px;
+}
+.mar_top10{
+  margin-top: 10px;
+}
+.mar_top5{
+  margin-top: 5px;
+}
+.mar_top3{
+  margin-top: 3px;
+}
+.mar_left30{
+  margin-left: 30px;
+}
+.mar_left20{
+  margin-left: 20px;
+}
+.mar_left{
+  margin-left: 15px;
+}
+.mar_left10{
+  margin-left: 10px;
+}
+.mar_left5{
+  margin-left: 5px;
+}
+.mar_left3{
+  margin-left: 3px;
+}
+.pad_top30{
+  padding-top: 30px;
+}
+.pad_top20{
+  padding-top: 20px;
+}
+.pad_top{
+  padding-top: 15px;
+}
+.pad_top10{
+  padding-top: 10px;
+}
+.pad_top5{
+  padding-top: 5px;
+}
+.pad_top3{
+  padding-top: 3px;
+}
+.pad_left30{
+  padding-left: 30px;
+}
+.pad_left20{
+  padding-left: 20px;
+}
+.pad_left{
+  padding-left: 15px;
+}
+.pad_left10{
+  padding-left: 10px;
+}
+.pad_left5{
+  padding-left: 5px;
+}
+.pad_left3{
+  padding-left: 3px;
 }
